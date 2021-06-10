@@ -1,2 +1,2 @@
-#IMPORTANT
-Works only on server, so try using xamp
+# Important
+Works fine on xampp
