@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/fontello.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap" rel="stylesheet">
+
+    <title>Blog o grach</title>
+
+    <script>
+
+      function menutoggler(IsMenuOn)
+      {
+        if (IsMenuOn == false)
+        {
+          IsMenuOn = true;
+
+          document.getElementById("menu").style.display="block";
+          document.getElementById("menudisplayer").setAttribute("onclick", "menutoggler(true)");
+        }
+
+        else
+        {
+          IsMenuOn = false;
+
+          document.getElementById("menu").style.display="none";
+          document.getElementById("menudisplayer").setAttribute("onclick", "menutoggler(false)");
+        }
+
+      }
+
+
+    </script>
+
+
+  </head>
+  <body>
+    
+    <!------------NAV-SECTION-------------------------->
+
+    <section id="nav">
+
+          <div id="logo">
+            <a href="#">LOGO</a>
+          </div>
+
+          <div id="nav-bar">
+            <ul>
+              <li><a href="glowna">Główna</a></li>
+              <li><a href="aktualnosci">Aktualności</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="konto">Konto</a></li>
+            </ul>
+          </div>
+
+          <div id="magicbutton">
+            <button id="menudisplayer" onclick="menutoggler(false)">
+              <i class="icon-cog"></i>
+            </button>
+
+            <ul id="menu" class="clear">
+              <li><a href="glowna">Główna</a></li>
+              <li><a href="aktualnosci">Aktualności</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="konto">Konto</a></li>
+            </ul>
+
+          </div>
+
+    </section>
+
+    <div class="seperator"></div>
+
+    <!------------CONTENT-SECTION-------------------------->
+
+    <article id="content">
+
+      <section id="articles">
+
+          <div class="container">
+
+              <h1 class="h2" id="toph">Najnowsze artykuły</h1>
+
+              <div class="row">
+
+                  <div class="article col-lg-6 col-xl-4">
+
+                        <div class="wrapper">
+                            <a href="cyberpunk"><img src="img/cyberpunkg.jpg" alt="cyberpunkg" height="216px" width="384px"></a>
+
+                            <div class="phototext">
+                              Cyberpunk 2077
+                            </div>
+
+                        </div>
+                  </div>
+
+                  <div class="article col-lg-6 col-xl-4">
+
+                      <div class="wrapper">
+                            <a href="minecraft"><img src="img/minecraft.jpg" alt="minecraft" height="216px" width="384px"></a>
+
+                            <div class="phototext">
+                              Minecraft
+                            </div>
+                        </div>
+
+                  </div>
+
+                  <div class="article col-lg-6 col-xl-4">
+
+                    <div class="wrapper">
+                      <a href="whiletruelern"><img src="img/while-true-learn.png" alt="While(true) learn" height="216px" width="384px"></a>
+
+                      <div class="phototext">
+                        While(true) learn
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="article col-lg-6 col-xl-4">
+
+                    <div class="wrapper">
+                      <a href="metroexodus"><img src="img/metro.png" alt="Metro Exodus" height="216px" width="384px"></a>
+
+                      <div class="phototext">
+                        Metro Exodus
+                      </div>
+                    </div>
+
+                </div>
+
+                <div class="article col-lg-6 col-xl-4">
+
+                  <div class="wrapper">
+                    <a href="fallout76"><img src="img/fallout76.png" alt="Fallout 76" height="216px" width="384px"></a>
+
+                    <div class="phototext">
+                      Fallout 76
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="article col-lg-6 col-xl-4">
+
+                  <div class="wrapper">
+                    <a href="hacknet"><img src="img/HacknetEducationalLicense.png" alt="hacknet" height="216px" width="384px"></a>
+
+                    <div class="phototext">
+                      Hacknet
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+          </div>
+
+      </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>

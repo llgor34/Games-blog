@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/fontello.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap" rel="stylesheet">
+
+    <title>Blog o grach</title>
+
+    <script>
+
+      function menutoggler(IsMenuOn)
+      {
+        if (IsMenuOn == false)
+        {
+          IsMenuOn = true;
+
+          document.getElementById("menu").style.display="block";
+          document.getElementById("menudisplayer").setAttribute("onclick", "menutoggler(true)");
+        }
+
+        else
+        {
+          IsMenuOn = false;
+
+          document.getElementById("menu").style.display="none";
+          document.getElementById("menudisplayer").setAttribute("onclick", "menutoggler(false)");
+        }
+
+      }
+
+
+    </script>
+
+
+  </head>
+  <body>
+    
+    <!------------NAV-SECTION-------------------------->
+
+    <section id="nav">
+
+          <div id="logo">
+            <a href="#">LOGO</a>
+          </div>
+
+          <div id="nav-bar">
+            <ul>
+              <li><a href="glowna">Główna</a></li>
+              <li><a href="aktualnosci">Aktualności</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="konto">Konto</a></li>
+            </ul>
+          </div>
+
+          <div id="magicbutton">
+            <button id="menudisplayer" onclick="menutoggler(false)">
+              <i class="icon-cog"></i>
+            </button>
+
+            <ul id="menu" class="clear">
+              <li><a href="glowna">Główna</a></li>
+              <li><a href="aktualnosci">Aktualności</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="konto">Konto</a></li>
+            </ul>
+
+          </div>
+
+    </section>
+
+    <div class="seperator"></div>
+
+    <article class="onearticle">
+
+      <header><h1 class="title">Cyberpunk 2077</h1></header>
+      
+      <p>Stało się! Cyberpunk 2077, ten mityczny hicior od twórców Wiedźmina 3, czyli naszego rodzimego CD Projekt RED, wreszcie zszedł z chmur na ziemię. A minęło już przecież osiem lat od momentu, kiedy go oficjalnie zapowiedziano. </p>
+
+        <p>Jak wiele zmieniło się od tamtego czasu. PlayStation 4 zdążyło się zestarzeć, a w jego miejsce wchodzi PlayStation 5, Microsoft wymyślił i stworzył Xbox Series X, Red Dead Redemption 2 przetarł nowe szlaki dla twórców gier, a Assassin’s Creed III przeobraziło się w Assassin’s Creed Valhalla. Naczekaliśmy się na tego Cyberpunka, oj, naczekaliśmy! I ja także czekałem, z mocno zaciśniętymi kciukami.</p>
+
+        <img class="img-fluid float" src="img/cyberpunk-rec.png" alt="cyberpunk 2077" width="220px" height="220px">
+      
+        <p>Nic więc dziwnego, że podczas tego trwającego blisko dekadę okresu akcje CD Projekt RED poszybowały w górę, tak samo, jak i oczekiwania graczy. Wydawało się nawet, że Cyberpunk 2077 po prostu nie jest w stanie im sprostać, bo takiemu „hype’owi” nikt by nie podołał. Tymczasem rzeczywistość okazała się zdecydowanie bardziej skomplikowana.</p>
+
+        <BR><p>Teraz gdy Cyberpunk 2077 zawitał pod strzechy, jedni wychwalają go pod niebiosa, a inni pomstują, na czym świat stoi. A ja? Mnie CD Projekt RED wyprowadził z równowagi tak bardzo, że decyduję się na recenzję bez taryfy ulgowej. Na chwilę zapominam o tym, że to polski zespół, któremu kibicuję z patriotycznego obowiązku, zapominam, że istniał Wiedźmin 3, zapominam o wszelkiej sympatii, jaką mam i do producenta, i do tego projektu jako takiego… </p>
+
+        <h1 class="title h3">Jakie błędy najbardziej nas rozbawiły i wkurzyły w Cyberpunku 2077?</h1>
+      <p>
+        <ul>
+        <li>Niekontrolowane ruchy NPC-ów</li>
+        <li>Ludzie bez twarzy</li>
+        <li>Znikające ciuchy V</li>
+        <li>„Pijani” kierowcy na drogach</li>
+        <li>Strzelanie z pistoletu, którego nie ma</li>
+        <li>Bezgłośne spluwy i cichutkie eksplozje</li>
+        <li>Błędy automatycznego zapisu</li>
+        <li>Przedmioty, które są obok dłoni albo przenikają przez ręce</li>
+        <li>Tłumy, które ni z tego ni z owego „na hura” przebiegają przez pasy</li>
+        <li>Drzwi, które się nie otwierają, a przeciwnicy i tak przez nie próbują przejść</li>
+        <li>I wiele, wiele więcej...</li>
+      </ul>
+      </p>
+
+
+    </article>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>

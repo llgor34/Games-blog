@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/fontello.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap" rel="stylesheet">
+
+    <title>Blog o grach</title>
+
+    <script>
+
+      function menutoggler(IsMenuOn)
+      {
+        if (IsMenuOn == false)
+        {
+          IsMenuOn = true;
+
+          document.getElementById("menu").style.display="block";
+          document.getElementById("menudisplayer").setAttribute("onclick", "menutoggler(true)");
+        }
+
+        else
+        {
+          IsMenuOn = false;
+
+          document.getElementById("menu").style.display="none";
+          document.getElementById("menudisplayer").setAttribute("onclick", "menutoggler(false)");
+        }
+
+      }
+
+
+    </script>
+
+
+  </head>
+  <body>
+    
+    <!------------NAV-SECTION-------------------------->
+
+    <section id="nav">
+
+          <div id="logo">
+            <a href="#">LOGO</a>
+          </div>
+
+          <div id="nav-bar">
+            <ul>
+              <li><a href="glowna">Główna</a></li>
+              <li><a href="aktualnosci">Aktualności</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="konto">Konto</a></li>
+            </ul>
+          </div>
+
+          <div id="magicbutton">
+            <button id="menudisplayer" onclick="menutoggler(false)">
+              <i class="icon-cog"></i>
+            </button>
+
+            <ul id="menu" class="clear">
+              <li><a href="glowna">Główna</a></li>
+              <li><a href="aktualnosci">Aktualności</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="konto">Konto</a></li>
+            </ul>
+
+          </div>
+
+    </section>
+
+    <div class="seperator"></div>
+
+    <article class="onearticle">
+
+      <header><h1 class="title">Metro Exodus</h1></header>
+      
+      <p>Metro Exodus jest lepsze niż przypuszczałem w nawet najbardziej optymistycznym scenariuszu. Otwarty świat to najciekawsze, co mogło spotkać tę grę. Dzieło Ukraińców jest jak nowy STALKER. To survivalowa przygoda tak ociekająca klimatem, że nie sposób się od niej oderwać. Po prostu się zakochałem. Nie jest to jednak miłość ślepa i naiwna.</p>
+
+        <p> Żeby osadzić mój zachwyt na odpowiedniej skali, zaznaczę, że dwie poprzednie gry z serii Metro były dla mnie najwyżej dobre. Takie 7/10 oraz 7+/10 w niewynaturzonym systemie ocen pierwszoosobowych strzelanin. To nie tak, że jestem fanatykiem uniwersum Głuchowskiego. Uwielbiam przytłaczającą atmosferę Pikniku na skraju drogi, ale potrafię spojrzeć krytycznym okiem na wszystkie Metra, Stalkery czy Fallouty. Co nie zmienia faktu, że Metro Exodus jest KAPITALNE. Oczywiście jak na możliwości Ukraińców z 4A Games.</p>
+
+        <img class="img-fluid float-r" src="img/metro.png" alt="cyberpunk 2077" width="220px" height="220px">
+      
+        <p>Ciasne, pełne grzybów i wilgoci moskiewskie tunele zamieniamy na wielki świat pod otwartym niebem. Początkowo byłem sceptyczny wobec tego pomysłu. W końcu Głuchowski od zawsze kojarzył mi się z klimatem ciasnoty, klaustrofobii i zaszczucia. Moja rezerwa była jednak niepotrzebna. Wyjście na powierzchnię to najlepsze, co mogło przydarzyć się tej grze. Gracz dostaje kilka otwartych stref do zwiedzenia i każda z nich jest na swój sposób cudowna.</p>
+
+        <p>Otwarty świat Metro zachwyca. Czy to radioaktywna pustynia, czy wioska zaraz przy Wołdze, czy Cerkiew pośród gęstych zarośli.Gra urzeka widokami.Strzelanina wywołuje efekt Wiedźmina - zamiast przeć do przodu z karabinem w rękach, non stop będziecie się zatrzymywać i chłonąć widoki. Zupełnie nieoczekiwanie Exodus wyrasta na jedną z najładniejszych strzelanin, jakie kiedykolwiek powstały.Modele 3D postaci i przeciwników pozostawiają trochę do życzenia, lecz sam świat - no po prostu cudo.</p>
+
+        <h1 class="title h3">Wymagania</h1>
+      <br>
+      <p>
+        Wymagania rekomendowane:
+        <ul>
+          <li>System operacyjny: Windows 10</li>
+          <li>Procesor: Intel Core i7-4770K lub odpowiednik AMD</li>
+          <li>Pamięć RAM: 8 GB</li>
+          <li>Karta graficzna: Nvidia GeForce GTX 1070/GeForce RTX 2060 lub AMD Radeon Vega 56, ewentualnie inna z 8 GB pamięci</li>
+          <li>Inne: funkcje RTX wymagają Windowsa 10 build 1809 i DirectX 12</li>
+        </ul>
+
+      </p>
+
+
+    </article>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>

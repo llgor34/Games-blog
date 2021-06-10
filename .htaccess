@@ -1,0 +1,11 @@
+Options FollowSymLinks
+RewriteEngine On
+RewriteRule ^aktualnosci aktualnosci.html
+RewriteRule ^cyberpunk cyberpunk.html
+RewriteRule ^minecraft minecraft.html
+RewriteRule ^whiletruelern whiletrue.html
+RewriteRule ^metroexodus metro.html
+RewriteRule ^fallout76 fallout.html
+RewriteRule ^hacknet hacknet.html
+RewriteRule ^konto konto.html
+RewriteRule ^glowna index.html [L]

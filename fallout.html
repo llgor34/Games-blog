@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/fontello.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap" rel="stylesheet">
+
+    <title>Blog o grach</title>
+
+    <script>
+
+      function menutoggler(IsMenuOn)
+      {
+        if (IsMenuOn == false)
+        {
+          IsMenuOn = true;
+
+          document.getElementById("menu").style.display="block";
+          document.getElementById("menudisplayer").setAttribute("onclick", "menutoggler(true)");
+        }
+
+        else
+        {
+          IsMenuOn = false;
+
+          document.getElementById("menu").style.display="none";
+          document.getElementById("menudisplayer").setAttribute("onclick", "menutoggler(false)");
+        }
+
+      }
+
+
+    </script>
+
+
+  </head>
+  <body>
+    
+    <!------------NAV-SECTION-------------------------->
+
+    <section id="nav">
+
+          <div id="logo">
+            <a href="#">LOGO</a>
+          </div>
+
+          <div id="nav-bar">
+            <ul>
+              <li><a href="glowna">Główna</a></li>
+              <li><a href="aktualnosci">Aktualności</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="konto">Konto</a></li>
+            </ul>
+          </div>
+
+          <div id="magicbutton">
+            <button id="menudisplayer" onclick="menutoggler(false)">
+              <i class="icon-cog"></i>
+            </button>
+
+            <ul id="menu" class="clear">
+              <li><a href="glowna">Główna</a></li>
+              <li><a href="aktualnosci">Aktualności</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="konto">Konto</a></li>
+            </ul>
+
+          </div>
+
+    </section>
+
+    <div class="seperator"></div>
+
+    <article class="onearticle">
+
+      <header><h1 class="title">Fallout 76</h1></header>
+      
+      <p>Fallout 76 to intrygujący eksperyment, pozbawiony tradycyjnej narracji i wyborów moralnych, a skupiający się na czystej rozgrywce. Nie zadowoli to wszystkich, ale frekwencja na serwerach wskazuje, że gra już teraz cieszy się zainteresowaniem. </p>
+
+        <p>Znany z poprzedniej części aspekt budowania obozów przypadł wielu graczom do gustu. Brakowało tylko dzielenia się własną przestrzenią z innymi. Bethesda postanowiła więc zaoferować rozgrywkę grupową, by wspólnie przeżywać przygody na powojennych pustkowiach w nowej grze.</p>
+
+        <img class="img-fluid float" src="img/fallout76.png" alt="cyberpunk 2077" width="220px" height="220px">
+      
+        <p>Wcielamy się w jednego z mieszkańców Krypty 76, który 25 lat po zakończeniu wojny nuklearnej wyrusza, by zbadać świat po apokalipsie. Cała historia sprowadza się tylko do podążania śladami nadzorczyni krypty, która opuściła schron przed nami, żeby wykonać tajną misję. Bez ograniczeń dotyczących kierunku eksploracji terenów Zachodniej Wirginii rozpoczynamy wędrówkę i długi proces poznawania pustkowi.</p>
+
+        <p>Odkrywanie smaczków i tajemnic odbywa się głównie przez czytanie dzienników i odsłuchiwanie nagrań, gdyż w Fallout 76 nie ma bohaterów niezależnych - poza paroma robotami. Z założenia to gracze są pierwszymi zaludniającymi nowy świat, więc powierzchnię zamieszkują głównie mutanty i potwory. Wszystko to składa się w jedną, spójną całość - to gra, w której sami kreujemy narrację i opowieść.</p>
+
+        <h1 class="title h3">Fallout Forever</h1>
+      <p>
+        Moja przygoda z Falloutem zaczęła się dość dawno, od dema Fallouta Tactics we wczesnych dwutysięcznych. Od tamtego czasu zawsze grałem w Fallouty, a gdy zaczęły one przypominać moją ulubioną serię gier – The Elder Scrolls – byłem wniebowzięty. Zacząłem spędzać długie godziny, grając w Fallouta 3 i New Vegas, używając konsoli i modując gry. Gdy Fallout 4 miał się w końcu ukazać, ładniejsza, bardziej cukierkowa grafika i liczne zmiany funkcjonalności sprawiły, że odpuściłem sobie tę grę. Aż do momentu, w którym moja dziewczyna kupiła mi Fallout 4: Game of the Year Edition w prezencie.
+      </p>
+
+
+    </article>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>

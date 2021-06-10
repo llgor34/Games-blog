@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/fontello.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap" rel="stylesheet">
+
+    <title>Blog o grach</title>
+
+    <script>
+
+      function menutoggler(IsMenuOn)
+      {
+        if (IsMenuOn == false)
+        {
+          IsMenuOn = true;
+
+          document.getElementById("menu").style.display="block";
+          document.getElementById("menudisplayer").setAttribute("onclick", "menutoggler(true)");
+        }
+
+        else
+        {
+          IsMenuOn = false;
+
+          document.getElementById("menu").style.display="none";
+          document.getElementById("menudisplayer").setAttribute("onclick", "menutoggler(false)");
+        }
+
+      }
+
+
+    </script>
+
+
+  </head>
+  <body>
+    
+    <!------------NAV-SECTION-------------------------->
+
+    <section id="nav">
+
+          <div id="logo">
+            <a href="#">LOGO</a>
+          </div>
+
+          <div id="nav-bar">
+            <ul>
+              <li><a href="glowna">Główna</a></li>
+              <li><a href="aktualnosci">Aktualności</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="konto">Konto</a></li>
+            </ul>
+          </div>
+
+          <div id="magicbutton">
+            <button id="menudisplayer" onclick="menutoggler(false)">
+              <i class="icon-cog"></i>
+            </button>
+
+            <ul id="menu" class="clear">
+              <li><a href="glowna">Główna</a></li>
+              <li><a href="aktualnosci">Aktualności</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="konto">Konto</a></li>
+            </ul>
+
+          </div>
+
+    </section>
+
+    <div class="seperator"></div>
+
+    <article class="onearticle">
+
+      <header><h1 class="title">Hacknet</h1></header>
+      
+      <p>Jest kilka powodów, dla których warto kupić i zagrać w Hacknet, ale jeden z nich, mało oczywisty, jest powodem wystarczającym samym w sobie. Mianowicie warto jest kupić Hacknet, żeby go zainstalować na laptopie i pójść z tym laptopem do jakiegoś miejsca publicznego, kawiarni, hotspotu czy czegoś w tym stylu. Tam odpalamy grę pośród tych wszystkich ludzi siedzących na Facebooku, Instagramie, Twitterze, w Office czy czymkolwiek innym zdecydowanie mało hardkorowym i... robimy za hakera. Hacknet w ogóle nie wygląda jak gra. Dla laika zaglądającego nam wścibsko przez ramię, a pewnie i nawet dla sporej grupy osób nieźle zorientowanych, będziemy wyglądać jakbyśmy naprawdę właśnie włamywali się do różnych komputerów. </p>
+
+        <p>Jakbyśmy naprawdę zalewali proxy pustym ruchem z shellów, jakbyśmy przegryzali się przez firewalle analizując ich strukturę, jakbyśmy łamali protokoły FTP, SMTP i HTTP żeby otworzyć porty i zyskać zdalny dostęp administratora. I wszystko to w desperckim pośpiechu, zanim dopadną nas programy śledzące. Warto jest wydać dziesięć euro na Hacknet, żeby w duchu turlać się śmiechu z min tych wszystkich ludzi, robiących wielkie oczy na widok cyberprzestępcy siedzącego przy stoliku obok.</p>
+
+        <img class="img-fluid float-r" src="img/HacknetEducationalLicense.png" alt="cyberpunk 2077" width="220px" height="220px">
+      
+        <p>To jest powód wystarczający, ale nie jedyny. Hacknet to świetnie wystylizowana, całkowicie unikalna i zdecydowanie warta uwagi gra. Zwróciliście uwagę, że nie napisałem, że to gra bardzo dobra? Cóż, pewnie dlatego, że Hacknet bardzo dobry niestety nie jest. Nadrabia jednak wyjątkowością, stylem i klimatem - i nawet jeśli ma jakieś niedociągnięcia i problemy, to wydaje mi się, że zalety jednak przewyższają wady.</p>
+
+        <h1 class="title h3">Hacknet jako symulator.</h1>
+      <p>
+        Hacknet to symulator hakowania, jak już pewnie się wszyscy domyślili. Nie jest to symulator szczególnie realistyczny... prawdopodobnie, bo w sumie nie wiem jak wygląda prawdziwe hakowanie, więc trudno mi to ocenić. Ale nie wydaje się, żeby był realistyczny. Zamiast tego jest wiarygodny. Wiem, to trochę paradoks, ale tak właśnie jest. Hacknet pokazuje hakowanie może i nieprawdziwe, ale zaskakująco autentyczne. Wystarczająco, by zmylić szarego gracza, który nigdy się do żadnych komputerów nie włamywał, ani nawet nie chciał. Nie ma tu durnych uproszczeń, rozwiązywania łamigłówek i jakichś innych gierek logicznych, które uchodzą za włamywanie się do komputerów w innych produkcjach. Zamiast tego mamy mocno osadzone w realiach wpisywanie komend tekstowych i interfejs jako żywo przywodzący na myśl jakąś hybrydę DOSa czy UNIXa z mityczną, hardkorową hakerską nakładką X-Systemu. Coś fantastycznego. Serio, tak kapitalnie to wymyślono, że prawie wszystko poza najprostszymi czynnościami, takimi jak nawigowanie po katalogach, wymaga wklepania odpowiedniej komendy. Kopiowanie pliku, odpalenie programu, łączenie przez IP i mnóstwo innych czynności. Wszystko z klawiatury, jak prawdziwy twardziel. Nawet do usuwania plików trzeba użyć komendy rm. I dobrze, że można wyczyścić od razu zawartości całego katalogu dodając do niej gwiazdkę, bo inaczej podstawowa zasada hakerskiego bezpieczeństwa i higieny pracy, czyli odruchowe czyszczenie logów przed rozłączeniem się z obcym komputerem, byłaby strasznie uciążliwa.
+      </p>
+
+
+    </article>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>

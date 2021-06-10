@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/fontello.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap" rel="stylesheet">
+
+    <title>Blog o grach</title>
+
+    <script>
+
+      function menutoggler(IsMenuOn)
+      {
+        if (IsMenuOn == false)
+        {
+          IsMenuOn = true;
+
+          document.getElementById("menu").style.display="block";
+          document.getElementById("menudisplayer").setAttribute("onclick", "menutoggler(true)");
+        }
+
+        else
+        {
+          IsMenuOn = false;
+
+          document.getElementById("menu").style.display="none";
+          document.getElementById("menudisplayer").setAttribute("onclick", "menutoggler(false)");
+        }
+
+      }
+
+
+    </script>
+
+
+  </head>
+  <body>
+    
+    <!------------NAV-SECTION-------------------------->
+
+    <section id="nav">
+
+          <div id="logo">
+            <a href="#">LOGO</a>
+          </div>
+
+          <div id="nav-bar">
+            <ul>
+              <li><a href="glowna">Główna</a></li>
+              <li><a href="aktualnosci">Aktualności</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="konto">Konto</a></li>
+            </ul>
+          </div>
+
+          <div id="magicbutton">
+            <button id="menudisplayer" onclick="menutoggler(false)">
+              <i class="icon-cog"></i>
+            </button>
+
+            <ul id="menu" class="clear">
+              <li><a href="glowna">Główna</a></li>
+              <li><a href="aktualnosci">Aktualności</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="konto">Konto</a></li>
+            </ul>
+
+          </div>
+
+    </section>
+
+    <div class="seperator"></div>
+
+    <article class="onearticle">
+
+      <header><h1 class="title">Minecraft</h1></header>
+      
+      <p>Gdyby ktoś dwa lata temu zapytał mnie, jakie jest moje pierwsze skojarzenie po usłyszeniu słowa sandbox – bez wahania rzuciłbym którymkolwiek tytułem ze stajni Rockstara. Jednak dzisiaj ciężko by mi było w tej samej sytuacji nie pomyśleć przede wszystkim o produkcji, która skutecznie zredefiniowała to, co do tej pory wszyscy rozumieliśmy pod pojęciem otwartego świata, czyli o Minecrafcie.</p>
+
+        <p> Gra – porównywana przez wielu do cyfrowej wersji oryginalnych klocków LEGO – narodziła się w maju 2009 roku, kiedy to Markus „Notch” Persson zaczął prace nad tym tytułem, inspirowanym między innymi równie „kanciastym” Infiniminerem. Po upływie zaledwie miesiąca autor zaczął przyjmować zamówienia przedpremierowe. Od tamtej chwili liczba fanów systematycznie rośnie, a tytuł zdążył zdobyć niebywały rozgłos w branży, udowadniając jednocześnie, że wizja „garażowej” produkcji, prowadzącej do ziszczenia amerykańskiego snu, to nie mrzonka.</p>
+
+        <img class="img-fluid float-r" src="img/creeper.png" alt="cyberpunk 2077" width="220px" height="220px">
+      
+        <p>Pokusiłbym się o stwierdzenie, że ciężko obecnie o użytkownika Internetu, który nawet jeśli nie jest zagorzałym fanem tego dzieła, to chociażby o nim nie słyszał. Notabene, jeśli chodzi o rozgrywkę online, to serwerów specjalnie dedykowanych tej grze odnajdziemy całą masę. Na wielu z nich rzesze ludzi gromadzą się tylko po to, by wspólnie tworzyć całe społeczności, miasta, a nawet krainy, będące swoistymi dziełami sztuki, nowoczesnymi rzeźbami pixel artu, z którym to Minecraft coraz częściej wymieniany jest jednym tchem. </p>
+
+        <p>Oczywiście w dobie zatrzęsienia tytułów z najwyższej półki styl graficzny przywodzący na myśl świat złożony z wielkich pikseli nie każdemu przypadnie do gustu. Wymagana jest tu odrobina dystansu, ale czasami i to nie pomoże – w końcu nie wszyscy lubią bawić się klockami.</p>
+
+        <h1 class="title h3">Jak duży jest świat minecraft?</h1>
+      <p>
+        Ten piękny świat w minecrafcie jest skończony, w sumie świat w minecrafcie ma 3,600,000,000,000,000 metrów kwadratowych
+      </p>
+
+
+    </article>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>

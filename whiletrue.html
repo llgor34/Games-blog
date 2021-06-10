@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/fontello.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap" rel="stylesheet">
+
+    <title>Blog o grach</title>
+
+    <script>
+
+      function menutoggler(IsMenuOn)
+      {
+        if (IsMenuOn == false)
+        {
+          IsMenuOn = true;
+
+          document.getElementById("menu").style.display="block";
+          document.getElementById("menudisplayer").setAttribute("onclick", "menutoggler(true)");
+        }
+
+        else
+        {
+          IsMenuOn = false;
+
+          document.getElementById("menu").style.display="none";
+          document.getElementById("menudisplayer").setAttribute("onclick", "menutoggler(false)");
+        }
+
+      }
+
+
+    </script>
+
+
+  </head>
+  <body>
+    
+    <!------------NAV-SECTION-------------------------->
+
+    <section id="nav">
+
+          <div id="logo">
+            <a href="#">LOGO</a>
+          </div>
+
+          <div id="nav-bar">
+            <ul>
+              <li><a href="glowna">Główna</a></li>
+              <li><a href="aktualnosci">Aktualności</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="konto">Konto</a></li>
+            </ul>
+          </div>
+
+          <div id="magicbutton">
+            <button id="menudisplayer" onclick="menutoggler(false)">
+              <i class="icon-cog"></i>
+            </button>
+
+            <ul id="menu" class="clear">
+              <li><a href="glowna">Główna</a></li>
+              <li><a href="aktualnosci">Aktualności</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="konto">Konto</a></li>
+            </ul>
+
+          </div>
+
+    </section>
+
+    <div class="seperator"></div>
+
+    <article class="onearticle">
+
+      <header><h1 class="title">While True: Lern()</h1></header>
+      
+      <p>while True: learn() to logiczna gra indie, w której gracz będzie tworzył własne programy i algorytmy. Pomimo nastawienia stritce na elementy łamigłówki mamy tutaj także historię programowania i aspekt zarządzania naszą serwerownią w której pracujemy.</p>
+
+        <p>Nasz bohater jest początkującym programistą, jednak gdy zostawia komputer włączony na noc, kot pisze programy za niego. Co ciekawe, zwierzak robi to lepiej od nas, więc naszym zadaniem jest stworzenie algorytmu mogącego tłumaczyć mowę kocią na ludzką – być może futrzak ma dla nas ciekawą wiadomość.
+
+        </p>
+
+        <img class="img-fluid float" src="img/while-true-learn.png" alt="cyberpunk 2077" width="220px" height="220px">
+      
+        <p>Poziomy sprowadzają się do sortowania danych, przedstawionych tutaj za pomocą kształtów. Przykładowo, w jednym bloku wyjściowym mamy 40 kwadratów i 20 trójkątów, używając algorytmu sortującego musimy odpowiednio segregować dane. Z czasem gra utrudni nam zadania dając nie tylko różne kształty danych, ale także ich kolory. Drzewko zadań wraz z postępem faktycznie rozrasta się, także o zadania dodatkowe. </p>
+
+        <p>Są to zlecenia od firm, które pomogą nam zasilić nasz budżet. Do produkcji i testowania naszych programów będą nam potrzebne pieniądze, te pozyskujemy właśnie z zadań pobocznych, dzięki którym zapewniamy sobie stały przypływ gotówki. Walutę w grze możemy także wymieniać na ulepszenia naszego wirtualnego sprzętu, dzięki czemu programy działają wydajniej. Zgromadzone środki możemy przeznaczyć również na potrzeby naszego kota, zaopatrując go w chociażby w ubrania.</p>
+
+
+    </article>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>
